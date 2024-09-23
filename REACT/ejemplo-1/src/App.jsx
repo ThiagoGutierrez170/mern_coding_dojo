@@ -3,20 +3,32 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import Saludo from './components/saludo';
+import Mensaje from './components/mensaje';
+import MiTarjeta from './components/MiTarjeta';
 
 const App = () => {
-  const [contador, setContador] = useState(0)
+  const nombre = 'Juan Pérez';
+  const edad = 30;
+  const usuario = {
+    nombreUsuario: 'juanperez',
+    correo: 'juan@ejemplo.com'
+  };
+
+  const pasatiempos = ['Leer', 'Jugar videojuegos', 'Senderismo'];
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>¡Hola, <Saludo nombre="Thiago"/> </h1>
-        <button onClick={() => setContador((contador) => contador + 1)}>
-          Contador: {contador}
-        </button>
-      </header>
-    </div>
+    <>
+      <Mensaje />
+      <MiTarjeta />
+      <p>{nombre}</p>
+      <p>{edad}</p>
+      <p>{usuario.nombreUsuario}</p>
+      <p>{usuario.correo}</p>
+      {pasatiempos.map((pasatiempo, indice) => (
+        <p key={indice}>{pasatiempo}</p>
+      ))}
+    </>
   );
-}
+};
 
 export default App;
