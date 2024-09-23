@@ -1,0 +1,42 @@
+.mundo{
+  background-color: rgb(125, 125, 125);
+  padding: 2px;
+  margin: 10px;
+  text-align: center;
+}
+.cabezera{
+  background-color: aqua;
+  height:100px;
+  width: 96%;
+  margin: 2%;
+}
+.cuerpo{
+  background-color: blueviolet;
+  height: auto;
+  width: 62%;
+  margin: 1%;
+  padding: 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lateral{
+  background-color: brown;
+  height: 500px;
+  width: 30%;
+  margin: 1%;
+}
+.box{
+  background-color: orange;
+  height: 200px;
+  width: 26%;
+  margin: 3%;
+}
+.inferior{
+  background-color: rgb(23, 181, 17);
+  height: 150px;
+  width: 100%;
+  margin: 3%;
+}
+.contenedor{
+  display: flex;
+}
