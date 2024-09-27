@@ -1,11 +1,11 @@
 // MiTarjeta.jsx
 import styles from './MiTarjeta.module.css';
 
-const MiTarjeta = (props) => {
+const MiTarjeta = ({titulo,contenido}) => {
     return (
         <div className={styles.tarjeta}>
-            <h2>Título de la Tarjeta</h2>
-            <p>Este es el contenido de la tarjeta.</p>
+            <h2>{titulo}</h2>
+            <p>{contenido}</p>
         </div>
     );
 }
