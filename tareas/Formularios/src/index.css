@@ -1,0 +1,152 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 20px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.nav{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.registro{
+  height: 70px;
+  width: 100px;
+  background-color: rgb(135, 9, 56);
+}
+#titulo{
+  margin: 0px;
+}
+.tabla{
+  margin: auto;
+  margin-top: 30px;
+  font-size: 30px;
+  border-collapse: collapse;
+  width: 80%;
+
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgb(0, 132, 191);
+}
+td {
+  padding: 10px 15px; /* Espaciado dentro de las celdas */
+  text-align: center; /* Centrar texto en las celdas */
+}
+th{
+  font-weight: bold;
+  background-color: rgb(0, 104, 152);
+}
+
+.formulario {
+  width: 400px; /* Ancho del formulario */
+  margin: 0 auto; /* Centrar el formulario */
+  padding: 20px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde del formulario */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #212680; /* Color de fondo */
+}
+
+label {
+  display: block; /* Para que cada etiqueta ocupe una línea completa */
+  margin-bottom: 5px; /* Espaciado entre etiqueta y input */
+  font-weight: bold; /* Negrita para etiquetas */
+  font-size: 20px;
+}
+
+input{
+  font-size: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 90%; /* Ancho completo del input */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 15px; /* Espaciado entre inputs */
+  border: 1px solid #ccc; /* Borde del input */
+  border-radius: 3px; /* Bordes redondeados */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007BFF; /* Cambiar color del borde al hacer foco */
+  outline: none; /* Quitar el borde azul por defecto */
+}
+
+.crear {
+  padding: 10px 15px; /* Espaciado interno del botón */
+  background-color: #007BFF; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+button:hover {
+  background-color: #0056b3; /* Color del botón al pasar el ratón */
+}
