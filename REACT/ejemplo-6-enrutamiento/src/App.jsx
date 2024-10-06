@@ -33,6 +33,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/usuario/:nombreUsuario" element={<Usuario />} />  {/* Ruta para ver detalles de usuario */}
+          <Route path="*" element={<Inicio />} />{/* catch all route, en caso de que la ruta no exista, en este caso Inicio, pero se utiliza un NotFountd */}
         </Routes>
       </div>
     </Router>

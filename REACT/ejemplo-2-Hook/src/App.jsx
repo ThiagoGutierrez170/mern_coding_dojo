@@ -6,6 +6,7 @@ import UseStateEjemplo from './components/useStateEjemplo'
 import UseEffectsEjemplo from './components/UseEffectsEjemplo'
 import ContadorDeClics from './components/ContadorDeClicks'
 import Destino from './components/Destino'
+import FormularioInicioSesion from './components/HookPersonalizado/LoginForm'
 function App() {
 
   return (
@@ -16,6 +17,8 @@ function App() {
         <Destino lugar="París" impuesto={0.1} />
         <Destino lugar="Tokio" impuesto={0.08} />
         <Destino lugar="Nueva York" impuesto={0.0925} />
+        <h3>hook personalizado</h3>
+        <FormularioInicioSesion/>
     </>
   )
 }
