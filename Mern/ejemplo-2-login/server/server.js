@@ -8,6 +8,7 @@ import cookieParser from 'cookie-parser';
 //IMPORTACION DE ROUTES
 import userRoutes from './src/routes/user.routes.js'
 import sessionRoutes from './src/routes/session.routes.js'
+import notaRoutes from './src/routes/notas.routes.js'
 
 dotenv.config();    // Nos permite leer variables de entorno
 const app = express();// Creamos nuestra instancia del servidor
@@ -28,7 +29,7 @@ app.use(cookieParser());//CONFIGURACION DE COOKIES
 //USO DE RUTAS
 app.use("/api/users", userRoutes);
 app.use("/api/session", sessionRoutes);
-
+app.use("/api/notas", notaRoutes);
 // Crear la conexión con LA BD
 dbConnect();
 

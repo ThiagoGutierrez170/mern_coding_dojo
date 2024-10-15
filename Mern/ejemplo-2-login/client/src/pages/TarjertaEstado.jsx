@@ -19,7 +19,7 @@ const TarjetaEstado = () => {
         }
       } catch (error) {
         // Si no está autenticado, lo redirigimos al login
-        navigate("/login");
+        navigate("/");
       }
     };
 
