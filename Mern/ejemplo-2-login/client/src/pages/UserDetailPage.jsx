@@ -4,12 +4,6 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 
-
-
-
-
-
-
 const UserDetailPage = () => {
 
     const { id } = useParams(); //OBTENEMOS EL ID DE LA URL
